@@ -1,0 +1,75 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* For about styles */
+.hero-mid {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.hero-mid .hide {
+    display: none;
+}
+
+.hero-mid h1 {
+    padding-top: 4rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroText {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.heroText h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heroText p {
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 0.5rem 0 2rem 0;
+}
+
+.heroText .show {
+    background: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    color: #219ebc;
+}
+
+@media screen and (max-width:555px) {
+    .heroText h1 {
+        padding: 10px 20px;
+    }
+
+    .heroText p {
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+
+    .heroText .show {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+}
